@@ -66,7 +66,7 @@ header .flex {
 
 .main-banner {
     background-color: white;
-    padding: 0.75rem 5rem;
+    padding: 1.5rem 5rem;
     display: inline-block;
     margin-top: 10rem;
     margin-right: -2rem;
@@ -147,4 +147,64 @@ footer img {
     height: 1.5rem;
     margin-left: 2rem;
     margin-right: 1rem;
+}
+
+@media only screen and (device-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    height: 22rem;
+  }
+  .main-banner {
+    margin-top: 5rem;
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  .menu {
+    display: hidden;
+  }
+  .truncated-menu {
+    display: visible;
+  }
+  .container {
+    width: 100%;
+  }
+  header {
+    height: 17rem;
+  }
+  .main-banner {
+      padding: 0 1rem;
+      margin: 9rem auto 0 auto;
+      width: 100%;
+      text-align: center;
+  }
+  .supporting {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .service {
+    margin: 3.77rem;
+  }
+  .service div {
+    font-size: 0.77rem;
+    padding-bottom: 1.54rem;
+  }
+  .title div {
+    padding-bottom: 1rem;
+  }
+  .philosophy p {
+    padding-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+  .appointments p {
+    padding-bottom: 4rem;
+    font-size: 0.77rem;
+  }
 }
